@@ -38,7 +38,7 @@ const Navbar = () => {
           px-10 py-3
           rounded-full
           bg-white/70
-          backdrop-blur-md
+          backdrop-blur-xs
           border border-neutral-200
           shadow-lg
           w-fit

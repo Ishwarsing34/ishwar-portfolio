@@ -109,7 +109,7 @@ const Experience = () => {
 
         <ExperienceRow
           logo={stealth}
-          title="Full Stack Development – TA"
+          title="Full Stack Developer"
           subtitle="Stealth Startup"
           date="June 2025 – December 2025"
         />

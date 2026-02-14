@@ -44,7 +44,7 @@ const Skills = () => {
         Skills
       </h2>
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6">
 
         <div className="
           flex flex-wrap

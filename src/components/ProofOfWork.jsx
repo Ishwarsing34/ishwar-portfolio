@@ -1,48 +1,84 @@
 import { useState } from "react";
 import { Globe, Github } from "lucide-react";
 
+import corsica from "../assets/corsilogo.png";
+import Thumgen from "../assets/thumbgenie.svg";
+import mernauth from "../assets/mern.auth.svg";
+import teamwork from "../assets/projectmanagerlogo.png";
+import sticky from "../assets/stickynotelogo.png";
+import invoice from "../assets/invoice.png";
+import expenspo from "../assets/expensologo.png"
+
 const projects = [
   {
-    title: "Credit Buddy",
-    type: "fullstack",
-    description:
-      "Credit Buddy simplifies credit card queries with AI-powered insights, offering quick and reliable solutions for users to manage their finances better and make informed decisions effortlessly.",
-    tech: ["Next.js", "Puppeteer", "Google Gemini", "TypeScript"],
-  },
-  {
-    title: "Flick.AI",
-    type: "fullstack",
-    description:
-      "An AI-Powered tool with 200+ users designed to refine your tweets with full customizations and make them stand out—because GPT just doesn’t get it.",
-    tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-  },
-  {
-    title: "GhostGram",
-    type: "fullstack",
-    description:
-      "GhostGram is an anonymous messaging platform that lets users securely send and receive messages through unique authenticated links.",
-    tech: ["Next.js", "MongoDB", "NextAuth"],
-  },
-  {
-    title: "Portfolio UI",
+    title: "Corsica",
     type: "frontend",
     description:
-      "Modern responsive portfolio built with clean UI and smooth animations.",
-    tech: ["React", "Tailwind", "Framer Motion"],
+      "Corsica is a modern EdTech platform where users explore courses, preview lectures, and follow structured learning paths designed to help developers upskill efficiently across tech domains.",
+    tech: ["React.js", "Redux", "React Context API", "JavaScript"],
+    logo: corsica,
+    Git: "https://github.com/Ishwarsing34/Corsica---Upskill-YourSelf",
+    Website: "https://corsica-upskill-your-self-xlab.vercel.app",
   },
   {
-    title: "Landing Page",
-    type: "frontend",
+    title: "ThumbGenie",
+    type: "fullstack",
     description:
-      "High-converting marketing landing page with clean component design.",
-    tech: ["React", "Tailwind"],
+      "ThumbGenie is an AI-powered thumbnail generator that helps creators produce optimized thumbnails in multiple aspect ratios, delivering fast, engaging, and visually strong designs instantly.",
+    tech: ["React.js", "TypeScript", "MongoDB", "Node.js", "Google Gemini"],
+    logo: Thumgen,
+    Git: "https://github.com/Ishwarsing34/Corsica---Upskill-YourSelf",
+    Website: "",
   },
   {
-    title: "Dashboard UI",
+    title: "Expenso",
+    type: "fullstack",
+    description:
+      "Expenso is a full-stack finance management app that enables users to track expenses, monitor income trends, and visualize financial insights through interactive dashboards and reports.",
+    tech: ["React", "Nodejs", "MongoDB", "Recharts"],
+    logo: expenspo,
+    Git: "https://github.com/Ishwarsing34/Expenso-Your-Personal-Expense-Traacker",
+    Website: "https://expenso-your-personal-expense-track.vercel.app/login",
+  },
+  {
+    title: "E-Invoice",
     type: "frontend",
     description:
-      "Admin dashboard UI with charts, responsive layout and reusable components.",
-    tech: ["React", "Tailwind", "Recharts"],
+      "E-Bill is a modern invoice management system built with React and Redux Toolkit, allowing users to efficiently create, manage, and track invoices with structured state handling.",
+    tech: ["React", "Tailwind", "Redux Toolkit"],
+    logo: invoice,
+    Git: "https://github.com/Ishwarsing34/Invoice-Generator",
+    Website: "https://invoice-generator-omega-ashy.vercel.app/",
+  },
+  {
+    title: "Mern Auth",
+    type: "fullstack",
+    description:
+      "MERN Auth is a production-ready authentication system built using the MERN stack, implementing secure login flows, email verification, password resets, and real-world security practices.",
+    tech: ["React", "Nodejs", "Nodemailer", "MongoDB"],
+    logo: mernauth,
+    Git: "https://github.com/Ishwarsing34/Mern-Auth",
+    Website: "https://mern-auth-xv8l.vercel.app/",
+  },
+  {
+    title: "TeamWork",
+    type: "fullstack",
+    description:
+      "TeamWork is a collaborative project management platform enabling teams to manage tasks, organize workspaces, assign responsibilities, and automate notifications for streamlined productivity.",
+    tech: ["React", "Nodejs", "Inngest", "Postgres", "Prisma", "Clerk"],
+    logo: teamwork,
+    Git: "https://github.com/Ishwarsing34/projecto-manager",
+    Website: "https://projecto-manager-frontend.vercel.app",
+  },
+  {
+    title: "Sticky-Notes",
+    type: "frontend",
+    description:
+      "Sticky Notes is a lightweight task management app allowing users to create, manage, and organize notes with smooth UI interactions and animation-driven visual feedback.",
+    tech: ["React", "Framer Motion"],
+    logo: sticky,
+    Git: "https://github.com/Ishwarsing34/Sticky-Notes",
+    Website: "https://sticky-notes-chi.vercel.app/",
   },
 ];
 
@@ -59,36 +95,20 @@ const ProofOfWork = () => {
   return (
     <section className="py-16 sm:py-20 md:py-24">
 
-      {/* Section Title */}
-      <h2 className="
-        text-2xl
-        sm:text-3xl
-        md:text-4xl
-        font-semibold
-        text-center
-        mb-8 sm:mb-10 md:mb-12
-      ">
+      {/* Title */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-10">
         Proof of Work
       </h2>
 
-      {/* Segmented Tabs */}
-      <div className="flex justify-center mb-10 sm:mb-12 px-4">
-        <div className="
-          flex
-          bg-white
-          p-1
-          rounded-xl
-          border border-neutral-300
-          w-full
-          sm:w-auto
-          max-w-xs
-        ">
+      {/* Tabs */}
+      <div className="flex justify-center mb-12 px-4">
+        <div className="flex bg-white p-1 rounded-xl border border-neutral-300 max-w-xs w-full sm:w-auto">
           <button
             onClick={() => {
               setActiveTab("fullstack");
               setVisibleCount(2);
             }}
-            className={`flex-1 sm:flex-none px-4 sm:px-6 py-2 text-xs sm:text-sm font-medium rounded-lg transition ${
+            className={`flex-1 sm:flex-none px-5 py-2 text-sm font-medium rounded-lg transition ${
               activeTab === "fullstack"
                 ? "bg-white shadow-sm border"
                 : "text-neutral-600"
@@ -102,7 +122,7 @@ const ProofOfWork = () => {
               setActiveTab("frontend");
               setVisibleCount(2);
             }}
-            className={`flex-1 sm:flex-none px-4 sm:px-6 py-2 text-xs sm:text-sm font-medium rounded-lg transition ${
+            className={`flex-1 sm:flex-none px-5 py-2 text-sm font-medium rounded-lg transition ${
               activeTab === "frontend"
                 ? "bg-white shadow-sm border"
                 : "text-neutral-600"
@@ -113,95 +133,46 @@ const ProofOfWork = () => {
         </div>
       </div>
 
-      {/* Cards Grid */}
-      <div className="
-        max-w-6xl
-        mx-auto
-        grid
-        grid-cols-1
-        sm:grid-cols-2
-        gap-6 sm:gap-8
-        px-4 sm:px-6
-      ">
+      {/* Cards */}
+      <div className="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 ">
+
         {visibleProjects.map((project, index) => (
           <div
             key={index}
-            className="
-              relative
-              bg-white
-              border border-neutral-300
-              rounded-xl
-              p-5 sm:p-6 md:p-7
-              overflow-hidden
-              group
-              transition
-            "
+            className="relative bg-white border border-neutral-500 rounded-xl p-6 flex flex-col justify-between transition hover:shadow-xl "
           >
-            {/* Ripple Effect */}
-            <span
-              className="
-                absolute inset-0
-                opacity-0
-                group-hover:opacity-100
-                transition duration-500
-                pointer-events-none
-              "
-            >
-              <span
-                className="
-                  absolute
-                  w-72 h-72
-                  bg-blue-400/10
-                  rounded-full
-                  blur-3xl
-                  top-1/2 left-1/2
-                  -translate-x-1/2 -translate-y-1/2
-                  scale-50
-                  group-hover:scale-100
-                  transition duration-700
-                "
-              />
-            </span>
 
             {/* Logo */}
-            <div className="mb-4 sm:mb-5">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-md bg-gradient-to-br from-blue-900 to-blue-600" />
+            <div className="mb-5">
+              <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-neutral-100 border border-neutral-200">
+                {project.logo ? (
+                  <img
+                    src={project.logo}
+                    alt={project.title}
+                    className="max-w-[70%] max-h-[70%] object-contain"
+                  />
+                ) : (
+                  <div className="w-6 h-6 rounded bg-neutral-400" />
+                )}
+              </div>
             </div>
 
             {/* Title */}
-            <h3 className="
-              text-lg sm:text-xl
-              font-semibold
-              mb-3
-              tracking-tight
-            ">
+            <h3 className="text-xl font-semibold mb-3 tracking-tight">
               {project.title}
             </h3>
 
             {/* Description */}
-            <p className="
-              text-neutral-700
-              text-sm sm:text-[14px]
-              leading-6
-              mb-5 sm:mb-6
-            ">
+            <p className="text-neutral-700 text-sm leading-6 mb-6">
               {project.description}
             </p>
 
             {/* Tech Tags */}
-            <div className="flex flex-wrap gap-2 mb-5 sm:mb-6">
+            <div className="flex flex-wrap gap-2 mb-6">
               {project.tech.map((item, i) => (
                 <span
                   key={i}
-                  className="
-                    text-[11px] sm:text-[12px]
-                    px-2.5 sm:px-3
-                    py-1
-                    border border-neutral-400
-                    rounded-md
-                    bg-neutral-100
-                    font-medium
-                  "
+                  className="text-xs px-3 py-1 border border-neutral-300 rounded-md bg-neutral-100 font-medium"
                 >
                   {item}
                 </span>
@@ -209,71 +180,39 @@ const ProofOfWork = () => {
             </div>
 
             {/* Buttons */}
-            <div className="
-              flex
-              flex-col sm:flex-row
-              gap-3
-            ">
-              <button
-                className="
-                  flex items-center justify-center gap-2
-                  bg-neutral-900
-                  text-white
-                  text-xs
-                  font-medium
-                  px-4
-                  py-2
-                  rounded-md
-                  hover:bg-black
-                  transition
-                "
-              >
+            <div className="flex gap-3">
+              <button className="flex items-center gap-2 bg-neutral-900 text-white text-xs font-medium px-4 py-2 rounded-md hover:bg-black transition">
                 <Globe size={14} />
-                Website
+                <a href={project.Website} target="_blank" rel="noopener noreferrer">
+                  Website
+                </a>
               </button>
 
-              <button
-                className="
-                  flex items-center justify-center gap-2
-                  bg-neutral-900
-                  text-white
-                  text-xs
-                  font-medium
-                  px-4
-                  py-2
-                  rounded-md
-                  hover:bg-black
-                  transition
-                "
-              >
+              <button className="flex items-center gap-2 bg-neutral-900 text-white text-xs font-medium px-4 py-2 rounded-md hover:bg-black transition">
                 <Github size={14} />
-                Source
+                <a href={project.Git} target="_blank" rel="noopener noreferrer">
+                  Source
+                </a>
               </button>
             </div>
 
           </div>
         ))}
+
       </div>
 
       {/* Load More */}
       {visibleCount < filteredProjects.length && (
-        <div className="flex justify-center mt-10 sm:mt-12">
+        <div className="flex justify-center mt-12">
           <button
             onClick={() => setVisibleCount((prev) => prev + 2)}
-            className="
-              bg-neutral-900
-              text-white
-              px-6 py-2.5
-              rounded-md
-              text-sm
-              hover:bg-black
-              transition
-            "
+            className="bg-neutral-900 text-white px-6 py-2.5 rounded-md text-sm hover:bg-black transition"
           >
             Load More
           </button>
         </div>
       )}
+
     </section>
   );
 };
