@@ -38,7 +38,7 @@ const projects = [
     tech: ["React", "Nodejs", "MongoDB", "Recharts"],
     logo: expenspo,
     Git: "https://github.com/Ishwarsing34/Expenso-Your-Personal-Expense-Traacker",
-    Website: "https://expenso-your-personal-expense-track.vercel.app/login",
+    Website: "https://expenso-your-personal-expense-track.vercel.app",
   },
   {
     title: "E-Invoice",
