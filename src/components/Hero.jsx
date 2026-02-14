@@ -1,10 +1,10 @@
-import profile from '../assets/user-image3.jpeg'
+import profile from '../assets/user-image3.jpeg';
 
 
 const Hero = () => {
     return (
-        <section className="min-h-screen flex flex-col items-center justify-center text-center px-4">
-
+        <section className="min-h-screen flex flex-col items-center justify-center text-center px-4  pb-25">
+     
             {/* Avatar */}
             <img
                 src={profile} // replace with your image
@@ -19,9 +19,9 @@ const Hero = () => {
 
             {/* Description */}
             <p className="max-w-2xl text-neutral-600 text-base sm:text-lg leading-relaxed mb-8">
-                21, I break things, learn fast, and make shit happen. Deep into code and CS;
+                22, I break things, learn fast, and make shit happen. Deep into code🧑‍💻 & Caffeine🍵
                 anything that pushes the limits. History, coding, folk music, exercise and great books shaped me.
-                Still chasing mastery. If you’re working on something real, let’s talk.
+                Still chasing mastery. 
             </p>
 
             {/* Buttons */}

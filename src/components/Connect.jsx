@@ -2,7 +2,7 @@ import { MessageCircle, Linkedin } from "lucide-react";
 
 const Connect = () => {
   return (
-    <section className="py-24">
+    <section className="py-10">
 
       <div className="max-w-4xl mx-auto px-4">
 
@@ -162,6 +162,8 @@ const Connect = () => {
         </div>
 
       </div>
+
+
 
     </section>
   );
