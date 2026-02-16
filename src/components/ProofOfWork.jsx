@@ -28,7 +28,7 @@ const projects = [
     tech: ["React.js", "TypeScript", "MongoDB", "Node.js", "Google Gemini"],
     logo: Thumgen,
     Git: "https://github.com/Ishwarsing34/Corsica---Upskill-YourSelf",
-    Website: "",
+    Website: "https://thumb-genie-2ief.vercel.app",
   },
   {
     title: "Expenso",
