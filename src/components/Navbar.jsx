@@ -25,7 +25,7 @@ const Navbar = () => {
       name: "Resume",
       icon: FileText,
       external: true,
-      url: "www.xyz.com"
+      url: "https://drive.google.com/file/d/15Rj1tcnzpidAO1LP9zjrrjlh8huvF9hk/view"
     }
   ];
 
