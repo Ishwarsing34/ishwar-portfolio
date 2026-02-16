@@ -8,6 +8,7 @@ import teamwork from "../assets/projectmanagerlogo.png";
 import sticky from "../assets/stickynotelogo.png";
 import invoice from "../assets/invoice.png";
 import expenspo from "../assets/expensologo.png"
+import shorturlogo from "../assets/urlshort.png"
 
 const projects = [
   {
@@ -80,6 +81,17 @@ const projects = [
     Git: "https://github.com/Ishwarsing34/Sticky-Notes",
     Website: "https://sticky-notes-chi.vercel.app/",
   },
+  {
+  title: "Short Me",
+  type: "fullstack",
+  description:
+    "Short Me is a URL shortening application that allows users to convert long URLs into clean, shareable short links and instantly generate QR codes for quick access. It provides fast redirection, smooth UI interactions, and seamless link management.",
+  tech: ["React", "Node.js", "Express", "MongoDB", "QR Code Generator"],
+  logo: shorturlogo,
+  Git: "https://github.com/Ishwarsing34/SHORTME", 
+  Website: "https://shortme-a8oc.vercel.app",
+},
+
 ];
 
 const ProofOfWork = () => {
