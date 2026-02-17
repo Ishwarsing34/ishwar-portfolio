@@ -217,7 +217,7 @@ const ProofOfWork = () => {
       {visibleCount < filteredProjects.length && (
         <div className="flex justify-center mt-12">
           <button
-            onClick={() => setVisibleCount((prev) => prev + 4)}
+            onClick={() => setVisibleCount((prev) => prev + 3)}
             className="bg-neutral-900 text-white px-6 py-2.5 rounded-md text-sm hover:bg-black transition"
           >
             Load More
